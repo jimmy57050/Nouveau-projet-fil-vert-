@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+header {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/assets/img/eat_train_sleep_repeat.jpg);
+    background-size: cover; 
+}
+
+
+/***************** MENU ******************/
+
+.navbar {
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+}
+
+.navbar .nav-links ul li {
+    margin:  0 20px;
+}
+
+ul li:hover a {
+    color: aqua;
+}
+
+.logo:hover {
+    color: aqua
+}
+
+.navbar .menu-hamburger {
+    display: none;
+    width: 35px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 35px;
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar .logo {
+        position: absolute;
+        top: 35px;
+        left: 50px;
+    }
+
+    .navbar .menu-hamburger {
+        display : block;
+    }
+
+    .nav-links {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.712);
+        backdrop-filter: blur(7px);
+        width: 100%;
+        height: 100vh;
+        top: 0; 
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;    
+        transition: all 0.5s ease;
+    }
+
+
+    .nav-links.mobile-menu {
+    margin-left: 0;   
+        
+}
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links ul li {
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+
+}
+
+

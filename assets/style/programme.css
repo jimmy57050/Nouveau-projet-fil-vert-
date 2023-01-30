@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Roboto';
+    background-color: rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 0.707);
+}
+
+
+/***************** MENU ******************/
+
+.navbar {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.navbar a {
+    color: rgb(255, 255, 255);
+}
+
+.navbar ul li a  {
+    font-weight: 700;
+}
+
+.navbar .logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+
+}
+
+.navbar .nav-links ul li {
+    margin:  0 20px;
+}
+
+ul li:hover a {
+    color: aqua;
+}
+
+.logo:hover {
+    color: aqua
+}
+
+.navbar .menu-hamburger {
+    display: none;
+    width: 35px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 35px;
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar .logo {
+        position: absolute;
+        top: 35px;
+        left: 50px;
+    }
+
+    .navbar .menu-hamburger {
+        display : block;
+    }
+
+    .nav-links {
+        /* position: absolute; */
+        background-color: rgba(255, 255, 255, 0.712);
+        backdrop-filter: blur(7px);
+        width: 100%;
+        height: 100vh;
+        top: 0; 
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;    
+        transition: all 0.5s ease;
+    }
+
+
+    .nav-links.mobile-menu {
+    margin-left: 0;   
+        
+}
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links ul li {
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+
+}
+
+.container {
+    width: 98vw;
+
+}
+
+.container2 {
+width: 70%;
+}
+
+#mesprogrammes{
+    display: flex;
+    justify-content: center;
+}
+
+#ppl {
+    margin-left: 20px;
+    padding-top: 100px;
+    font-weight: 700;
+    color: #1b77c7;
+}
+
+#déroulement {
+    margin-left: 20px;
+    padding-top: 50px;
+    font-weight: 700;
+    color: #1b77c7;
+}
+
+.description_p {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    text-align: justify;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.définition {
+    padding-top: 25px;
+    font-size: 20px;
+    color: #43cce4d3;
+    padding-left: 20px;
+}
+
+#arnold {
+    float: right;
+    padding-left: 15px;
+    width: 30%;
+}
+
+#muscle_trav {
+    margin-left: 20px;;
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 200;
+    margin-left: 30px;
+}
+
+#img_ppl {
+    float: right;
+    padding-left: 15px;
+    width: 30%;
+    max-height:max-content;
+    height: 50%;
+}
+
+#repartition {
+    margin-left: 20px;
+    padding-top: 50px;
+    font-weight: 700;
+    color: #1b77c7;
+}
+
+#img_ppll {
+    float: right;
+    padding-left: 15px;
+    width: 30%;
+    max-height:max-content;
+    height: 50%;
+}
+
+#exemple_exo {
+    margin-left: 20px;
+    padding-top: 50px;
+    font-weight: 700;
+    color: #1b77c7;
+}
+
+
+table {
+    border: 1px solid white;
+    width: 600px;
+    height: 300px;
+    margin-top: 50px;
+}
+
+td {
+    text-align: center;
+}
+
+
+tr td {
+    border: 1px solid white;
+}
+
+.tableau_centre {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+a {
+    color: white;
+}
