@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Roboto';
+    background-color: rgba(0, 0, 0, 0.903);
+}
+
+/* header {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/assets/img/eat_train_sleep_repeat.jpg);
+    background-size: cover; 
+} */
+
+
+/***************** MENU ******************/
+
+.navbar {
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.navbar a {
+    color: rgb(255, 255, 255);
+}
+
+.navbar .logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+}
+
+.navbar .nav-links ul li {
+    margin:  0 20px;
+}
+
+ul li:hover a {
+    color: aqua;
+}
+
+.logo:hover {
+    color: aqua
+}
+
+.navbar .menu-hamburger {
+    display: none;
+    width: 35px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 35px;
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar .logo {
+        position: absolute;
+        top: 35px;
+        left: 50px;
+    }
+
+    .navbar .menu-hamburger {
+        display : block;
+    }
+
+    .nav-links {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.712);
+        backdrop-filter: blur(7px);
+        width: 100%;
+        height: 100vh;
+        top: 0; 
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;    
+        transition: all 0.5s ease;
+    }
+
+
+    .nav-links.mobile-menu {
+    margin-left: 0;   
+        
+}
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links ul li {
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+
+}
+
+
+
+/************************* main *********************/
+
+.container {
+    width: 98vw;
+}
+
+#mes_exos {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    font-size: 40px;
+    color: white;
+}
+
+.color {
+    color:#ffffffd3;
+    margin-left: 3%;
+    margin-top: 3%;
+    margin-bottom: 50px;
+    font-size: 35px;
+}
+
+.container2 {
+    width: 100%;
+    height: 300px
+}
+
+.img{
+    padding-left: 15px;
+    width: 100%;
+    height: 100%;
+    object-fit:contain; 
+    
+}
+
+#texte_dc {
+    color: white;
+}
+
+
+#Push {
+    margin-left: 3%;
+    padding-top: 100px;
+    font-weight: 700;
+    color: #e6e6e6;
+    font-size: 40px;
+    text-align: center;
+}
+
+ p {
+    font-size: 15px
+ }
+
+#pull {
+    color:#ffffff;
+    margin-left: 3%;
+    margin-top: 6%;
+    font-size: 40px;
+    text-align: center;
+}
+
+#legs {
+    color:#ffffff; 
+    font-size: 40px;
+    text-align: center;
+    margin-top: 6%;
+}
+
+.justify_p {
+    text-align: justify;
+}
+
+.exercices {
+    font-size: 22px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: #4bb9ec;
+    text-align: center;
+}
+
+/********************************/
+/********Carte tournante*********/
+/********************************/
+
+.flip-card {
+    background-color: transparent;
+    width: 350px;
+    height: 340px;
+    perspective: 1000px;
+    font-size: 20px;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: rgba(187, 187, 187, 0);
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #1e1e1e;
+    color: rgb(169, 167, 167);
+    transform: rotateY(180deg);
+    font-size: 18px;
+    font-family: "Roboto";
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 25px;
+}
+
+
+
+.flexx {
+    display: flex;
+    flex-wrap: wrap;
+}

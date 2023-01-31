@@ -9,11 +9,14 @@
 
 body {
     font-family: 'Roboto';
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.909);
     color: rgba(255, 255, 255, 0.707);
 }
 
 
+/***************** MENU ******************/
+/***************** MENU ******************/
+/***************** MENU ******************/
 /***************** MENU ******************/
 
 .navbar {
@@ -117,9 +120,13 @@ ul li:hover a {
 
 }
 
+/***************** Main ******************/
+/***************** Main ******************/
+/***************** Main ******************/
+/***************** Main ******************/
+
 .container {
     width: 98vw;
-
 }
 
 .container2 {
@@ -129,35 +136,33 @@ width: 70%;
 #mesprogrammes{
     display: flex;
     justify-content: center;
+    font-size: 40px;
+    color: white;
 }
 
-#ppl {
+.titre_ppl {
     margin-left: 20px;
     padding-top: 100px;
     font-weight: 700;
-    color: #1b77c7;
+    color: #e6e6e6;
+    font-size: 40px;
 }
 
-#déroulement {
-    margin-left: 20px;
-    padding-top: 50px;
-    font-weight: 700;
-    color: #1b77c7;
-}
 
 .description_p {
-    font-size: 20px;
+    font-size: 17px;
     padding-top: 20px;
     padding-left: 20px;
     text-align: justify;
     font-weight: 400;
     line-height: 130%;
+    color: #8f8e8e;
 }
 
 .définition {
     padding-top: 25px;
-    font-size: 20px;
-    color: #43cce4d3;
+    font-size: 30px;
+    color: #eeeeeed3;
     padding-left: 20px;
 }
 
@@ -170,41 +175,18 @@ width: 70%;
 #muscle_trav {
     margin-left: 20px;;
     margin-top: 25px;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 200;
     margin-left: 30px;
 }
 
-#img_ppl {
+.img_ppl {
     float: right;
     padding-left: 15px;
     width: 30%;
     max-height:max-content;
     height: 50%;
 }
-
-#repartition {
-    margin-left: 20px;
-    padding-top: 50px;
-    font-weight: 700;
-    color: #1b77c7;
-}
-
-#img_ppll {
-    float: right;
-    padding-left: 15px;
-    width: 30%;
-    max-height:max-content;
-    height: 50%;
-}
-
-#exemple_exo {
-    margin-left: 20px;
-    padding-top: 50px;
-    font-weight: 700;
-    color: #1b77c7;
-}
-
 
 table {
     border: 1px solid white;
@@ -230,5 +212,5 @@ tr td {
 }
 
 a {
-    color: white;
+    color: #5a8ed6;
 }
