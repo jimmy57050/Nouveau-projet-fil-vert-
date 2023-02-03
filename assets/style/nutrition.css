@@ -9,20 +9,18 @@
 
 body {
     font-family: 'Roboto';
-    background-color: rgba(0, 0, 0, 0.909);
-    color: rgba(255, 255, 255, 0.707);
-    background-image: url(/assets/img/wallpapper_black/1.jpg);
+        background-image: url(/assets/img/wallpapper_black/1.jpg);
+    background-attachment: fixed;
 }
 
 
-/***************** MENU ******************/
-/***************** MENU ******************/
-/***************** MENU ******************/
-/***************** MENU ******************/
 
+
+/***************** MENU ******************/
 
 .navbar {
-    padding: 10px 0 10px 10px;
+    position: absolute;
+    padding: 10px 0 10px 30px;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -31,25 +29,31 @@ body {
 }
 
 .navbar a {
-    color: rgb(255, 255, 255);
-}
-
-.navbar ul li a  {
-    font-weight: 700;
+    color: white;
 }
 
 .navbar .logo {
     font-size: 2em;
     font-weight: bold;
+    margin-left: 70px;
+    margin-top: 20px;
 }
 
 #logo_rat {
-    width: 20%;
+    width: 7%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .navbar .nav-links ul {
     display: flex;
-
 }
 
 .navbar .nav-links ul li {
@@ -62,6 +66,11 @@ ul li:hover a {
 
 .logo:hover {
     color: rgb(255, 0, 0)
+}
+
+.test {
+    position: fixed;
+    top: 0;
 }
 
 .navbar .menu-hamburger {
@@ -93,7 +102,7 @@ ul li:hover a {
     }
 
     .nav-links {
-        /* position: absolute; */
+        position: absolute;
         background-color: rgba(255, 255, 255, 0.712);
         backdrop-filter: blur(7px);
         width: 100%;
@@ -126,72 +135,101 @@ ul li:hover a {
 
 }
 
-/***************** Main ******************/
-/***************** Main ******************/
-/***************** Main ******************/
-/***************** Main ******************/
-
-.container {
-    width: 98vw;
-}
-
-.container2 {
-width: 70%;
-}
-
-#mesprogrammes{
+#la_nutrition {
     display: flex;
     justify-content: center;
+    padding-top: 15%;
+    padding-bottom: 10%;
     font-size: 40px;
     color: white;
+    padding-left: 5%;
 }
 
-.titre_ppl {
-    margin-left: 20px;
-    padding-top: 100px;
-    font-weight: 700;
-    color: #e6e6e6;
+.color {
+    color: #ffffffd3;
+    margin-top: 5%;
+    font-size: 25px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+ul li a {
+    color: rgb(255, 255, 255);
+
+}
+
+.titre {
+    color: #ffffff;
+    margin-left: auto;
+    margin-top: 15%;
     font-size: 40px;
+    text-align: center;
+    padding-left: 5%;
+    margin-bottom: 10%;
 }
 
-
-.description_p {
+.p {
     font-size: 17px;
     padding-top: 20px;
-    padding-left: 20px;
     text-align: justify;
-    font-weight: 400;
-    line-height: 130%;
+    font-weight: 700;
+    line-height: 30px;
     color: #8f8e8e;
 }
 
-.définition {
-    padding-top: 25px;
-    font-size: 30px;
-    color: #eeeeeed3;
-    padding-left: 20px;
-}
-
-#arnold {
-    float: right;
-    padding-left: 15px;
-    width: 30%;
-}
-
-#muscle_trav {
-    margin-left: 20px;;
-    margin-top: 25px;
+.p_b {
     font-size: 17px;
-    font-weight: 200;
-    margin-left: 30px;
+    padding-top: 20px;
+    text-align: justify;
+    font-weight: 700;
+    line-height: 30px;
+    color: #ffffff;
 }
 
-.img_ppl {
-    float: right;
-    padding-left: 15px;
-    width: 30%;
-    max-height:max-content;
-    height: 50%;
+.container{
+    width: 50%;
+    margin: auto;
+}
+
+.container1 {
+    width: 100%;
+    display: flex;
+}
+
+.container2{
+    width:33%;
+    color: white;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+}
+
+.border {
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: black;
+    padding: 7px;
+}
+
+.pre_liste {
+    color: #ffffffd3;
+    margin-top: 5%;
+    font-size: 20px;
+}
+
+.petit_texte {
+    font-size: 15px;
+    color: grey;
+    margin-top: 7px
 }
 
 table {
@@ -199,6 +237,7 @@ table {
     width: 600px;
     height: 300px;
     margin-top: 50px;
+    color: white;
 }
 
 td {
@@ -208,6 +247,8 @@ td {
 
 tr td {
     border: 1px solid white;
+    text-align: justify;
+    padding: 5px 0 5px 15px;
 }
 
 .tableau_centre {
@@ -217,31 +258,3 @@ tr td {
     flex-wrap: wrap;
 }
 
-a {
-    color: #5a8ed6;
-}
-
-
-ul {
-    display: flex;
-    justify-content: space-around;
-    margin: auto;
-    margin-top: 5%;
-}
-
-ul li a {
-    color: rgb(255, 255, 255);
-
-}
-
-#prog {
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.border {
-    border: 1px solid white;
-    border-radius: 10px;
-    background-color: black;
-    padding:7px;
-}

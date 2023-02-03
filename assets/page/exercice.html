@@ -10,7 +10,7 @@
 <body>
     
     <nav class="navbar">
-        <a href="/accueil.html" class="logo"> GymRat</a>
+        <a href="/accueil.html" class="logo"> GymRat <img src="/assets/img/gymrat.png" id="logo_rat" alt=""></a>
         <div class="nav-links">
             <ul>
                 <li><a href="/accueil.html">Accueil</a></li>
@@ -24,18 +24,27 @@
     </nav>
 <header></header>
 
-
     <main>
         <div class="container">
             <h1 id="mes_exos">
                 Mes exercices
             </h1>
 
-                <h2 id="Push">
+            <ul>
+                <li><a class="border" href="#anchor-pectoraux">Pectoraux</a></li>
+                <li><a class="border" href="#anchor-epaules">Epaules</a></li>
+                <li><a class="border" href="#anchor-triceps">Triceps</a></li>
+                <li><a class="border" href="#anchor-dos">Dos</a></li>
+                <li><a class="border" href="#anchor-biceps">Biceps</a></li>
+                <li><a class="border" href="#anchor-jambes">Jambes</a></li>
+                <li><a class="border" href="#anchor-abdominaux">Abdominaux</a></li>
+            </ul>
+
+                <h2 id="anchor-push" class="titre">
                     Exercice type push 
                 </h2>
 
-                <h2 class="color">
+                <h2 id="anchor-pectoraux" class="color">
                     Les Pectoraux : 
                 </h2>
 
@@ -64,7 +73,7 @@
                             <img src="/assets/img/00471301-Barbell-Incline-Bench-Press_Chest_720.gif" alt="" class="img"> 
                         </div>
                         <div class="flip-card-back">
-                            <h2 class="exercices " >
+                            <h2  class="exercices " >
                                 Développé incliné barre 
                             </h2> 
                             <p>
@@ -95,7 +104,7 @@
                 </div>
             </div>
 
-            <h2 class="color">
+            <h2 id="anchor-epaules"  class="color">
                 Les épaules :
             </h2>
     
@@ -158,8 +167,8 @@
 
             </div>
 
-            <h2 class="color">
-                Les Triceps
+            <h2 id="anchor-triceps" class="color">
+                Les Triceps :
             </h2>
 
             <div class="flexx">
@@ -222,12 +231,12 @@
             
         
             
-            <h2 id="pull">
+            <h2 class="titre" id="anchor-pull">
                 Exercice type pull 
             </h2>
             
-            <h2 class="color">
-                Le dos 
+            <h2 id="anchor-dos" class="color">
+                Le dos :
             </h2>
 
             
@@ -344,8 +353,8 @@
 
             </div>
             
-            <h2 class="color">
-                les biceps
+            <h2 id="anchor-biceps" class="color">
+                les biceps :
             </h2>
 
             <div class="flexx">
@@ -372,10 +381,10 @@
                         <div class="flip-card-front">
                             <img src="/assets/img/biceps-curl-haltere.gif" alt="" class="img"> 
                         </div>
-                        <div class="flip-card-back">
-                            <h2 class="exercices " >
-                                Curl haltères
-                            </h2> 
+                      <div class="flip-card-back">
+                          <h2 class="exercices " >
+                              Curl haltères
+                          </h2> 
                             <p>
                                 Que ce soit en position debout ou assise il est important, comme pour tout mouvement, de gainer afin de limiter les risques de blessure. <br> L’utilisation d’une barre simple ou en Z nécessite d’être debout pour une amplitude totale. <br> La position assise avec haltères permet de sécuriser le dos et est intéressante pour la mobilité des poignets qui autorise des prises variées.
                             </p>
@@ -404,12 +413,12 @@
         </div>
 
 
-            <h2 id="legs">
-                Exercice type pull 
+            <h2 id="anchor-jambes" class="titre">
+                Exercice type Jambes
             </h2>
             
-            <h2 class="color">
-                Les jambes
+            <h2 id="anchor-legs" class="color">
+                Les jambes :
             </h2>
 
 
@@ -520,15 +529,53 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
             </div>
 
+            <h2 id="anchor-abdominaux" class="titre">
+                Exercice type abdominaux
+            </h2>
+            
+            <h2 class="color">
+                Les abdominaux :
+            </h2>
 
+            <div class="flexx">
+                <div class="flip-card">
+                    <div class="flip-card-inner ">
+                        <div class="flip-card-front">
+                            <img src="/assets/img/04651101-Front-Plank_Waist_medium.avif" alt="" class="img"> 
+                        </div>
+                        <div class="flip-card-back">
+                            <h2 class="exercices " >
+                               La planche
+                            </h2> 
+                            <p class="justify_p">
+                                Le principe du gainage « ou planche abdo » consiste à renforcer la sangle abdominale par des exercices en contraction isométrique qui ciblent les muscles profonds. <br>
+                                 Ces muscles qui sont peu ou pas visibles jouent des rôles importants pour la stabilité et l’équilibre du corps. <br>
+                                  Posture, motricité, maintien des organes et  protection de la colonne vertébrale dépendent du gainage.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-
+                <div class="flip-card">
+                    <div class="flip-card-inner ">
+                        <div class="flip-card-front">
+                            <img src="/assets/img/02741301-Crunch-Floor-m_waist_720.gif" alt="" class="img"> 
+                        </div>
+                        <div class="flip-card-back">
+                            <h2 class="exercices " >
+                               Les crunchs
+                            </h2> 
+                            <p>
+                                Le crunch est probablement l’exercice le plus populaire et le plus pratiqué par les sportifs qui veulent développer une belle ceinture abdominale. <br>
+                                Principalement dédié au renforcement du grand-droit, effectué avec des rotations, cet exercice sollicite aussi fortement les obliques.  <br>
+                                Il existe de nombreuses variantes qui modifient l’intensité des crunchs. À plat au sol ou sur un banc les crunchs sont d’intensité modérée, en revanche sur un banc incliné, cet exercice s’intensifie proportionnellement à l’inclinaison du banc.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 

@@ -10,6 +10,7 @@
 
 body {
     background-color: rgba(0, 0, 0, 0.893);
+    background-image: url(/assets/img/wallpapper_black/7.jpg);
 }
 
 /*************** MENU ******************/ 
@@ -17,7 +18,7 @@ body {
 
 .navbar {
     position: absolute;
-    padding: 50px;
+    padding: 10px 0 10px 30px;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -32,7 +33,13 @@ body {
 .navbar .logo {
     font-size: 2em;
     font-weight: bold;
+    margin-bottom: 50px;
 }
+
+#logo_rat {
+    width: 20%
+}
+
 
 .navbar .nav-links ul {
     display: flex;
@@ -43,11 +50,11 @@ body {
 }
 
 ul li:hover a {
-    color: aqua;
+    color: rgb(255, 30, 0);
 }
 
 .logo:hover {
-    color: aqua
+    color: rgb(255, 0, 0)
 }
 
 .navbar .menu-hamburger {
@@ -65,6 +72,7 @@ ul li:hover a {
 
     .navbar {
         padding: 0;
+        position: fixed;
     }
 
     .navbar .logo {
@@ -116,8 +124,7 @@ table {
 }
 
 table td {
-    padding: 100px;
-
+    padding:80px
 }
 
 
@@ -146,3 +153,19 @@ input{
         z-index:1
     }
 }
+
+@media screen and (max-width:900px) 
+    {
+        table {
+          margin: auto;
+          margin-top: 30%;
+        }
+    }
+
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+

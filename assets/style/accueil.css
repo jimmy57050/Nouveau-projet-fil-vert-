@@ -23,7 +23,7 @@ header {
 
 .navbar {
     position: absolute;
-    padding: 50px;
+    padding: 10px 0 10px 30px;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -38,7 +38,13 @@ header {
 .navbar .logo {
     font-size: 2em;
     font-weight: bold;
+    margin-bottom: 50px;
 }
+
+#logo_rat {
+    width: 20%
+}
+
 
 .navbar .nav-links ul {
     display: flex;
@@ -49,11 +55,11 @@ header {
 }
 
 ul li:hover a {
-    color: aqua;
+    color: rgb(255, 0, 0);
 }
 
 .logo:hover {
-    color: aqua
+    color: rgb(255, 0, 0)
 }
 
 .navbar .menu-hamburger {
@@ -117,5 +123,3 @@ ul li:hover a {
     }
 
 }
-
-
