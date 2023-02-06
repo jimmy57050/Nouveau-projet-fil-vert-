@@ -1,0 +1,183 @@
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.navbar {
+    position: absolute;
+    padding: 10px 0 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.navbar a {
+    color: rgb(255, 255, 255);
+}
+
+.navbar .logo {
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+
+#logo_rat {
+    width: 7%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+}
+
+.navbar .nav-links ul li {
+    margin: 0 20px;
+}
+
+ul li:hover a {
+    color: rgb(255, 0, 0);
+}
+
+.logo:hover {
+    color: rgb(255, 0, 0);
+}
+
+.navbar .menu-hamburger {
+    display: none;
+    width: 35px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 35px;
+}
+
+@media screen and (max-width: 900px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar .logo {
+        position: absolute;
+        top: 35px;
+        left: 50px;
+    }
+
+    .navbar .menu-hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.712);
+        backdrop-filter: blur(7px);
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links.mobile-menu {
+        margin-left: 0;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links ul li {
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+}
+
+.form-control,
+.form-select,
+.card,
+.btn {
+    border-radius: 15px;
+}
+
+.form-control,
+.form-select {
+    background: none;
+    color: #fff;
+}
+
+.form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 0.75rem center !important;
+    background-size: 16px 12px !important;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+    width: 23px;
+    height: 23px;
+    display: inline-block;
+    top: 0;
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #ffffff;
+    overflow: hidden;
+}
+
+input[type='checkbox'] {
+    border-radius: 3px;
+}
+
+input[type='radio'] {
+    border-radius: 100%;
+}
+
+input[type='checkbox']:checked,
+input[type='radio']:checked {
+    border: none;
+}
+
+input[type='checkbox']:checked:after,
+input[type='radio']:checked:after {
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+    left: 0;
+    position: absolute;
+    top: 0;
+    font-size: 15px;
+    color: #000;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.CalculateForm {
+    padding-top: 100px;
+}
+
+body {
+    background-image: url(/assets/img/wallpapper_black/7.jpg);
+}
+
+body {
+    font-family: 'Roboto';
+    background-color: rgba(0, 0, 0, 0.903);
+}

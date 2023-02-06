@@ -1,40 +1,37 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style/accueil.css">
-    <title>Gymrat</title>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/style/accueil.css" />
+        <title>Gymrat</title>
+    </head>
 
-<body>
-    
-    <nav class="navbar">
-        <a href="/accueil.html" class="logo"> GymRat <img src="/assets/img/gymrat.png" id="logo_rat" alt=""></a>
-        <div class="nav-links">
-            <ul>
-                <li><a href="./accueil.html">Accueil</a></li>
-                <li><a href="./assets/page/programme.html">Programme</a></li>
-                <li><a href="/assets/page/exercice.html">Exercice</a></li>
-                <li><a href="/assets/page/nutrition.html">Nutrition</a></li>
-                <li><a href="./assets/page/calculateurImc.html">Calculateur imc</a></li>
-            </ul>
-        </div>
-        <img src="./assets/img/menu hamburger.png" alt="menu hamburger" class="menu-hamburger">
-    </nav>
-<header></header>
+    <body>
+        <nav class="navbar">
+            <a href="/accueil.html" class="logo"><img src="/assets/img/gymrat.png" id="logo_rat" alt="" />GymRat</a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="./accueil.html">Accueil</a></li>
+                    <li><a href="./assets/page/programme.html">Programme</a></li>
+                    <li><a href="/assets/page/exercice.html">Exercice</a></li>
+                    <li><a href="/assets/page/nutrition.html">Nutrition</a></li>
+                    <li><a href="./assets/page/calculateurImc.html">Calculateur imc</a></li>
+                    <li><a href="/assets/page/Calculateur de calorie.html">Calculateur de calories</a></li>
+                </ul>
+            </div>
+            <img src="./assets/img/menu hamburger.png" alt="menu hamburger" class="menu-hamburger" />
+        </nav>
+        <header></header>
+    </body>
 
-</body>
+    <script>
+        const menuHamburger = document.querySelector('.menu-hamburger');
+        const navLinks = document.querySelector('.nav-links');
 
-<script>
-    const menuHamburger = document.querySelector(".menu-hamburger")
-        const navLinks = document.querySelector(".nav-links")
- 
-        menuHamburger.addEventListener('click',()=>{
-        navLinks.classList.toggle('mobile-menu')
-        })
-
-</script>
-
+        menuHamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu');
+        });
+    </script>
 </html>

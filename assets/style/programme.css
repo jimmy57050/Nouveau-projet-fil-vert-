@@ -11,15 +11,13 @@ body {
     font-family: 'Roboto';
     background-color: rgba(0, 0, 0, 0.909);
     color: rgba(255, 255, 255, 0.707);
-    background-image: url(/assets/img/wallpapper_black/1.jpg);
+    background-image: url(/assets/img/wallpapper_black/7.jpg);
 }
 
-
 /***************** MENU ******************/
 /***************** MENU ******************/
 /***************** MENU ******************/
 /***************** MENU ******************/
-
 
 .navbar {
     padding: 10px 0 10px 10px;
@@ -34,26 +32,30 @@ body {
     color: rgb(255, 255, 255);
 }
 
-.navbar ul li a  {
+.navbar ul li a {
     font-weight: 700;
 }
 
 .navbar .logo {
     font-size: 2em;
     font-weight: bold;
+    margin-left: 90px;
+    margin-top: 20px;
 }
 
 #logo_rat {
-    width: 20%;
+    width: 7%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
 }
 
 .navbar .nav-links ul {
     display: flex;
-
 }
 
 .navbar .nav-links ul li {
-    margin:  0 20px;
+    margin: 0 20px;
 }
 
 ul li:hover a {
@@ -61,7 +63,7 @@ ul li:hover a {
 }
 
 .logo:hover {
-    color: rgb(255, 0, 0)
+    color: rgb(255, 0, 0);
 }
 
 .navbar .menu-hamburger {
@@ -74,10 +76,7 @@ ul li:hover a {
     margin: 35px;
 }
 
-
-
 @media screen and (max-width: 900px) {
-
     .navbar {
         padding: 0;
     }
@@ -89,7 +88,7 @@ ul li:hover a {
     }
 
     .navbar .menu-hamburger {
-        display : block;
+        display: block;
     }
 
     .nav-links {
@@ -98,20 +97,18 @@ ul li:hover a {
         backdrop-filter: blur(7px);
         width: 100%;
         height: 100vh;
-        top: 0; 
+        top: 0;
         left: 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: -100%;    
+        margin-left: -100%;
         transition: all 0.5s ease;
     }
 
-
     .nav-links.mobile-menu {
-    margin-left: 0;   
-        
-}
+        margin-left: 0;
+    }
 
     .nav-links ul {
         display: flex;
@@ -123,7 +120,6 @@ ul li:hover a {
         margin: 25px 0;
         font-size: 1.2em;
     }
-
 }
 
 /***************** Main ******************/
@@ -132,14 +128,12 @@ ul li:hover a {
 /***************** Main ******************/
 
 .container {
-    width: 98vw;
+    width: 50%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.613);
 }
 
-.container2 {
-width: 70%;
-}
-
-#mesprogrammes{
+#mesprogrammes {
     display: flex;
     justify-content: center;
     font-size: 40px;
@@ -147,51 +141,36 @@ width: 70%;
 }
 
 .titre_ppl {
-    margin-left: 20px;
-    padding-top: 100px;
-    font-weight: 700;
-    color: #e6e6e6;
+    color: #ffffff;
+    margin-left: auto;
+    margin-top: 15%;
     font-size: 40px;
+    text-align: center;
+    padding-left: 5%;
+    margin-bottom: 10%;
 }
-
 
 .description_p {
     font-size: 17px;
     padding-top: 20px;
-    padding-left: 20px;
     text-align: justify;
-    font-weight: 400;
-    line-height: 130%;
+    font-weight: 700;
+    line-height: 30px;
     color: #8f8e8e;
 }
 
 .définition {
-    padding-top: 25px;
-    font-size: 30px;
-    color: #eeeeeed3;
-    padding-left: 20px;
-}
-
-#arnold {
-    float: right;
-    padding-left: 15px;
-    width: 30%;
+    color: #ffffffd3;
+    margin-top: 5%;
+    font-size: 25px;
 }
 
 #muscle_trav {
-    margin-left: 20px;;
+    margin-left: 20px;
     margin-top: 25px;
     font-size: 17px;
     font-weight: 200;
     margin-left: 30px;
-}
-
-.img_ppl {
-    float: right;
-    padding-left: 15px;
-    width: 30%;
-    max-height:max-content;
-    height: 50%;
 }
 
 table {
@@ -204,7 +183,6 @@ table {
 td {
     text-align: center;
 }
-
 
 tr td {
     border: 1px solid white;
@@ -221,7 +199,6 @@ a {
     color: #5a8ed6;
 }
 
-
 ul {
     display: flex;
     justify-content: space-around;
@@ -231,7 +208,6 @@ ul {
 
 ul li a {
     color: rgb(255, 255, 255);
-
 }
 
 #prog {
@@ -240,8 +216,13 @@ ul li a {
 }
 
 .border {
-    border: 1px solid white;
-    border-radius: 10px;
-    background-color: black;
-    padding:7px;
+    margin-top: 40px;
+}
+
+.img_ppl {
+    width: 90%;
+}
+
+#img_fb {
+    padding-top: 20px;
 }

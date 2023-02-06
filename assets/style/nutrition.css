@@ -9,12 +9,9 @@
 
 body {
     font-family: 'Roboto';
-        background-image: url(/assets/img/wallpapper_black/1.jpg);
+    background-image: url(/assets/img/wallpapper_black/7.jpg);
     background-attachment: fixed;
 }
-
-
-
 
 /***************** MENU ******************/
 
@@ -46,18 +43,12 @@ body {
     left: 0%;
 }
 
-.sticky {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
 .navbar .nav-links ul {
     display: flex;
 }
 
 .navbar .nav-links ul li {
-    margin:  0 20px;
+    margin: 0 20px;
 }
 
 ul li:hover a {
@@ -65,7 +56,7 @@ ul li:hover a {
 }
 
 .logo:hover {
-    color: rgb(255, 0, 0)
+    color: rgb(255, 0, 0);
 }
 
 .test {
@@ -83,10 +74,7 @@ ul li:hover a {
     margin: 35px;
 }
 
-
-
 @media screen and (max-width: 900px) {
-
     .navbar {
         padding: 0;
     }
@@ -98,7 +86,7 @@ ul li:hover a {
     }
 
     .navbar .menu-hamburger {
-        display : block;
+        display: block;
     }
 
     .nav-links {
@@ -107,20 +95,18 @@ ul li:hover a {
         backdrop-filter: blur(7px);
         width: 100%;
         height: 100vh;
-        top: 0; 
+        top: 0;
         left: 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: -100%;    
+        margin-left: -100%;
         transition: all 0.5s ease;
     }
 
-
     .nav-links.mobile-menu {
-    margin-left: 0;   
-        
-}
+        margin-left: 0;
+    }
 
     .nav-links ul {
         display: flex;
@@ -132,7 +118,6 @@ ul li:hover a {
         margin: 25px 0;
         font-size: 1.2em;
     }
-
 }
 
 #la_nutrition {
@@ -159,7 +144,6 @@ ul {
 
 ul li a {
     color: rgb(255, 255, 255);
-
 }
 
 .titre {
@@ -190,9 +174,15 @@ ul li a {
     color: #ffffff;
 }
 
-.container{
+.text_img {
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.container {
     width: 50%;
     margin: auto;
+    background-color: rgba(0, 0, 0, 0.571);
 }
 
 .container1 {
@@ -200,8 +190,8 @@ ul li a {
     display: flex;
 }
 
-.container2{
-    width:33%;
+.container2 {
+    width: 33%;
     color: white;
     text-align: center;
     justify-content: space-around;
@@ -229,7 +219,7 @@ ul li a {
 .petit_texte {
     font-size: 15px;
     color: grey;
-    margin-top: 7px
+    margin-top: 7px;
 }
 
 table {
@@ -244,7 +234,6 @@ td {
     text-align: center;
 }
 
-
 tr td {
     border: 1px solid white;
     text-align: justify;
@@ -257,4 +246,3 @@ tr td {
     flex-direction: row;
     flex-wrap: wrap;
 }
-
