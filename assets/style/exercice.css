@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
-    background-image: url(/assets/img/wallpapper_black/7.jpg);
+    background-image: url(../../assets/img/wallpapper_black/7.jpg);
 }
 
 * {
